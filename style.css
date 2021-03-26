@@ -76,7 +76,7 @@ background-repeat: repeat-x;
 #main{
 margin-top: 119px;
     background: url('images/map-blur.png');
-    background-repeat: repeat;
+    background-repeat: repeat-y;
     margin-bottom: 50px
 }
 
@@ -102,8 +102,9 @@ a.info-box{
 .info-box img{
     height: 60px;
     margin: 10px;
-    float: right;
+    float: left;
 }
+
 
 .info-box h3{
     padding: 0;
@@ -117,14 +118,14 @@ a.info-box{
     width: 90%;
     color: #131313;
 }
-.info-box img{
-    float: left;
+.info-box img.right{
+    float: right;
     margin-top: 25px;
     height: 40px;
 }
 
 #info-box-full{
-    background-color: rgba(225,225,225,.8);
+    background-color: rgba(225,225,225, .8);
     width: 90%;
     display: block;
     margin: auto;
@@ -132,17 +133,20 @@ a.info-box{
     padding: 10px;
 }
 #info-box-full img{
-    width:90%;
+    width:100%;
 }
 #info-box-full h3{
     text-align:center;
 }
+
+/*################## WEATHER ################*/
 img.info-box-weather-icon{
     height: 30px;
-    width: 30px;
+    width: 30px !important;
     margin: 10px;
-    float: right;
+    float: left;
 }
+
 
 h1.info-box-weather-icon{
     font-size: 65px;
@@ -150,6 +154,19 @@ h1.info-box-weather-icon{
     padding: 0;
     margin: 0;
 }
+
+table{
+   width: 100%; 
+}
+
+td{
+    border-top: 1px solid #131313;
+}
+
+
+
+
+/*################## form ################*/
 input{
     width: 100%;
     height: 25px;
